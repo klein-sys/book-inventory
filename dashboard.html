@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tuy Senior High School Book Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <a href="borrow.html">Borrow</a>
+            <a href="return.html">Return</a>
+            <a href="profile.html">Profile</a>
+            <a href="#" onclick="logout()">Logout</a>
+            <span id="admin-link" style="display: none;"><a href="admin_books.html">Manage Books</a></span>
+            <span id="reports-link" style="display: none;"><a href="reports.html">Reports</a></span>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome back!</h2>
+            <p id="role-specific-content">Loading...</p>
+        </section>
+        <section id="search-section">
+            <h3>Search Books</h3>
+            <input type="text" id="search-bar" placeholder="Search for books...">
+            <div id="search-results">
+                <!-- Search results will be populated here -->
+            </div>
+        </section>
+        <section id="recent-activity">
+            <h3>Recent Activity</h3>
+            <ul id="activity-list">
+                <!-- Recent borrows/returns will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tuy Senior High School. Contact: admin@tuyhs.edu</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
