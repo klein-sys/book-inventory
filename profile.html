@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Profile</h1>
+        <nav><a href="dashboard.html">Dashboard</a></nav>
+    </header>
+    <main>
+        <form id="edit-profile">
+            <label for="username">Username:</label>
+            <input type="text" id="username" value="Current User">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <button type="submit">Update</button>
+        </form>
+        <section id="history">
+            <h3>Borrowing History</h3>
+            <ul id="history-list">
+                <li>Book A - Borrowed: 2023-10-01, Returned: 2023-10-10</li>
+            </ul>
+        </section>
+        <div id="admin-section" style="display: none;">
+            <h3>User Management</h3>
+            <table id="user-table">
+                <thead><tr><th>Username</th><th>Role</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
